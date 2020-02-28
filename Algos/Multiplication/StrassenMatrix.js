@@ -1,0 +1,5 @@
+function strassMult() {
+  
+}
+
+strassMult()
