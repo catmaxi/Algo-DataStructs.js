@@ -6,7 +6,6 @@ export function printM2d(M, n, m) {
   for (let i = 0; i < n; i++) {
     for (let j = 0; j < m; j++) {
       string += M[i][j]
-      // console.log('string is |' + string + '|')
       if (!(j == m - 1)) {
         string += ' | '
       }
