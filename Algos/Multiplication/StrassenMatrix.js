@@ -1,4 +1,12 @@
 // import * as printMatrix from './printMatrix.js'
+let tools = require('./printMatrix.js')
+
+module.exports = {
+  print2d: function(M, n, m) {
+    printM2d(M, n, m)
+  },
+}
+
 function strassMult(A, B) {
   M1 = (A[0][0] + A[1][1]) * (B[0][0] + B[1][1])
   M2 = (A[1][0] + A[1][1]) * B[0][0]
@@ -16,41 +24,41 @@ function strassMult(A, B) {
   return C
 }
 
-function printM2d(M, n, m) {
-  string = ''
-  for (let i = 0; i < n; i++) {
-    for (let j = 0; j < m; j++) {
-      string += M[i][j]
-      if (!(j == m - 1)) {
-        string += ' | '
-      }
-    }
-    if (!(i == n - 1)) {
-      string += '\n'
-      let count = 0
-      for (let k = 0; k < 2 * m + 1; k++) {
-        string += '-'
-        count++
-      }
+// function printM2d(M, n, m) {
+//   string = ''
+//   for (let i = 0; i < n; i++) {
+//     for (let j = 0; j < m; j++) {
+//       string += M[i][j]
+//       if (!(j == m - 1)) {
+//         string += ' | '
+//       }
+//     }
+//     if (!(i == n - 1)) {
+//       string += '\n'
+//       let count = 0
+//       for (let k = 0; k < 2 * m + 1; k++) {
+//         string += '-'
+//         count++
+//       }
 
-      string += '\n'
-    }
-  }
-  console.log(string)
-}
+//       string += '\n'
+//     }
+//   }
+//   console.log(string)
+// }
 
 let A = [
   [1, 2],
   [3, 4],
 ]
-printM2d(A, 2, 2)
+tools.print2d(A, 2, 2)
 
 let B = [
   [1, 1],
   [1, 1],
 ]
-printM2d(B, 2, 2)
+tools.print2d(B, 2, 2)
 
 let C = strassMult(A, B)
 
-printM2d(C, 2, 2)
+tools.print2d(C, 2, 2)

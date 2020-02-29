@@ -1,7 +1,13 @@
 // M is the matrix
 // n is the number of rows
 // m is the number of columns
-export function printM2d(M, n, m) {
+
+module.exports = {
+  print2d: function(M, n, m) {
+    printM2d(M, n, m)
+  },
+}
+function printM2d(M, n, m) {
   string = ''
   for (let i = 0; i < n; i++) {
     for (let j = 0; j < m; j++) {

@@ -1,0 +1,4 @@
+
+function Kmult(a, b) {
+  
+}
