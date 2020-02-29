@@ -12,4 +12,4 @@ function dynaFibo(n) {
   return arr[n]
 }
 
-console.log(dynaFibo(11))
+console.log(dynaFibo(1000))

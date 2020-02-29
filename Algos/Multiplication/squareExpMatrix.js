@@ -2,7 +2,7 @@ let indexFun = require('../../index.js')
 
 module.exports = {
   squExpMatrix: function(A, B) {
-    squExpMatrix(A, B)
+    return squExpMatrix(A, B)
   },
 }
 

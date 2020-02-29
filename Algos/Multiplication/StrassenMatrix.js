@@ -8,8 +8,6 @@ module.exports = {
 }
 
 function strassMult(A, B) {
-  // tools.print2d(A, 2, 2)
-  // tools.print2d(B, 2, 2)
   let M1 = (A[0][0] + A[1][1]) * (B[0][0] + B[1][1])
   let M2 = (A[1][0] + A[1][1]) * B[0][0]
   let M3 = A[0][0] * (B[0][1] - B[1][1])
@@ -25,29 +23,6 @@ function strassMult(A, B) {
   C[1][1] = M1 - M2 + M3 + M6
   return C
 }
-
-// function printM2d(M, n, m) {
-//   string = ''
-//   for (let i = 0; i < n; i++) {
-//     for (let j = 0; j < m; j++) {
-//       string += M[i][j]
-//       if (!(j == m - 1)) {
-//         string += ' | '
-//       }
-//     }
-//     if (!(i == n - 1)) {
-//       string += '\n'
-//       let count = 0
-//       for (let k = 0; k < 2 * m + 1; k++) {
-//         string += '-'
-//         count++
-//       }
-
-//       string += '\n'
-//     }
-//   }
-//   console.log(string)
-// }
 
 // let A = [
 //   [1, 2],

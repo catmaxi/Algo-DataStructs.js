@@ -7,8 +7,8 @@
     {
       "type": "node",
       "request": "launch",
-      "name": "squexpm",
-      "program": "${workspaceFolder}/Algos/Multiplication/squareExpMatrix.js",
+      "name": "main-debugger",
+      "program": "${workspaceFolder}/Algos/Fibonacci/matrixExpFibo.js",
       "skipFiles": ["<node_internals>/**"]
     }
   ]
