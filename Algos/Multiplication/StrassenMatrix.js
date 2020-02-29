@@ -2,12 +2,14 @@
 let tools = require('./printMatrix.js')
 
 module.exports = {
-  print2d: function(M, n, m) {
-    printM2d(M, n, m)
+  strassMult: function(A, B) {
+    strassMult(A, B)
   },
 }
 
 function strassMult(A, B) {
+  tools.print2d(A, 2, 2)
+  tools.print2d(B, 2, 2)
   M1 = (A[0][0] + A[1][1]) * (B[0][0] + B[1][1])
   M2 = (A[1][0] + A[1][1]) * B[0][0]
   M3 = A[0][0] * (B[0][1] - B[1][1])
