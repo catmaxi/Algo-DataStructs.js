@@ -19,9 +19,11 @@ function squExpMatrix(X, n) {
   } else if (n % 2 == 0) {
     return squExpMatrix(indexFun.StrassenMatrix.strassMult(X, X), n / 2)
   } else if (n % 2 == 1) {
-    return (
-      X * squExpMatrix(indexFun.StrassenMatrix.strassMult(X, X), (n - 1) / 2)
+    let TMP = squExpMatrix(
+      indexFun.StrassenMatrix.strassMult(X, X),
+      (n - 1) / 2,
     )
+    return indexFun.StrassenMatrix.strassMult(X, TMP)
   }
 }
 
@@ -29,4 +31,6 @@ let X = [
   [2, 0],
   [0, 2],
 ]
-squExpMatrix(X, 4)
+let Y = squExpMatrix(X, 4)
+indexFun.printM.print2d(Y)
+// console.log(Y)

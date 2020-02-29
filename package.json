@@ -1,7 +1,7 @@
 {
-  "name": "Algo-DataStructs.js",
+  "name": "algo-datastructs",
   "version": "1.0.0",
-  "description": "",
+  "description": "This is a personal project on writing common algorithm and data structures in js",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,7 +11,7 @@
     "url": "git+https://github.com/wenxuan27/Algo-DataStructs.js.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "wenxuan27",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/wenxuan27/Algo-DataStructs.js/issues"
