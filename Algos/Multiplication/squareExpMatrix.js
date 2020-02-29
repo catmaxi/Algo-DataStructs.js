@@ -17,20 +17,18 @@ function squExpMatrix(X, n) {
   } else if (n == 1) {
     return X
   } else if (n % 2 == 0) {
-    return squExpMatrix(indexFun.StrassenMatrix.strassMult(X, X), n / 2)
+    let newX = indexFun.StrassenMatrix.strassMult(X, X)
+    return squExpMatrix(newX, n / 2)
   } else if (n % 2 == 1) {
-    let TMP = squExpMatrix(
-      indexFun.StrassenMatrix.strassMult(X, X),
-      (n - 1) / 2,
-    )
+    let TMP = indexFun.StrassenMatrix.strassMult(X, X)
+    TMP = squExpMatrix(TMP, (n - 1) / 2)
     return indexFun.StrassenMatrix.strassMult(X, TMP)
   }
 }
 
-let X = [
-  [2, 0],
-  [0, 2],
-]
-let Y = squExpMatrix(X, 4)
-indexFun.printM.print2d(Y)
-// console.log(Y)
+// let X = [
+//   [2, 0],
+//   [0, 2],
+// ]
+// let Y = squExpMatrix(X, 5)
+// indexFun.printM.print2d(Y, 2, 2)

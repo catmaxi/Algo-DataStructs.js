@@ -3,20 +3,20 @@ let tools = require('./printMatrix.js')
 
 module.exports = {
   strassMult: function(A, B) {
-    strassMult(A, B)
+    return strassMult(A, B)
   },
 }
 
 function strassMult(A, B) {
-  tools.print2d(A, 2, 2)
-  tools.print2d(B, 2, 2)
-  M1 = (A[0][0] + A[1][1]) * (B[0][0] + B[1][1])
-  M2 = (A[1][0] + A[1][1]) * B[0][0]
-  M3 = A[0][0] * (B[0][1] - B[1][1])
-  M4 = A[1][1] * (B[1][0] - B[0][0])
-  M5 = (A[0][0] + A[0][1]) * B[1][1]
-  M6 = (A[1][0] - A[0][0]) * (B[0][0] + B[0][1])
-  M7 = (A[0][1] - A[1][1]) * (B[1][0] + B[1][1])
+  // tools.print2d(A, 2, 2)
+  // tools.print2d(B, 2, 2)
+  let M1 = (A[0][0] + A[1][1]) * (B[0][0] + B[1][1])
+  let M2 = (A[1][0] + A[1][1]) * B[0][0]
+  let M3 = A[0][0] * (B[0][1] - B[1][1])
+  let M4 = A[1][1] * (B[1][0] - B[0][0])
+  let M5 = (A[0][0] + A[0][1]) * B[1][1]
+  let M6 = (A[1][0] - A[0][0]) * (B[0][0] + B[0][1])
+  let M7 = (A[0][1] - A[1][1]) * (B[1][0] + B[1][1])
 
   let C = [[], []]
   C[0][0] = M1 + M4 - M5 + M7
