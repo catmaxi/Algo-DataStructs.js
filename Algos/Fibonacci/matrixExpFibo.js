@@ -1,4 +1,4 @@
-let indexFun = require('../../index.js')
+const indexFun = require('../../index.js')
 
 function matrixFibo(n) {
   let M = [
