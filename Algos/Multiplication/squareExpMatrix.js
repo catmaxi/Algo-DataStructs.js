@@ -1,4 +1,4 @@
-import { StrassenMatrix } from "../.."
+let indexFun = require('../../index.js')
 
 function squExpMatrix(X, n) {
   if (n < 0) {
@@ -13,4 +13,4 @@ function squExpMatrix(X, n) {
     return x * squareExp(x * x, (n - 1) / 2)
   }
 }
-StrassenMatrix
+// StrassenMatrix

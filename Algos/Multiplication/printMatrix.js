@@ -38,8 +38,8 @@ function printM2d(M, n, m) {
 //   }
 // }
 
-let A = [
-  [1, 2],
-  [3, 4],
-]
-printM2d(A, 2, 2)
+// let A = [
+//   [1, 2],
+//   [3, 4],
+// ]
+// printM2d(A, 2, 2)

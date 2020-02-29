@@ -47,18 +47,18 @@ function strassMult(A, B) {
 //   console.log(string)
 // }
 
-let A = [
-  [1, 2],
-  [3, 4],
-]
-tools.print2d(A, 2, 2)
+// let A = [
+//   [1, 2],
+//   [3, 4],
+// ]
+// tools.print2d(A, 2, 2)
 
-let B = [
-  [1, 1],
-  [1, 1],
-]
-tools.print2d(B, 2, 2)
+// let B = [
+//   [1, 1],
+//   [1, 1],
+// ]
+// tools.print2d(B, 2, 2)
 
-let C = strassMult(A, B)
+// let C = strassMult(A, B)
 
-tools.print2d(C, 2, 2)
+// tools.print2d(C, 2, 2)

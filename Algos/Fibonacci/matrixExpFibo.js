@@ -1,11 +1,9 @@
-import { StrassenMatrix } from '../..'
+let indexFun = require('../../index.js')
 
 function matrixFibo(n) {
   let M = [
     [1, 1],
     [1, 0],
   ]
-  StrassenMatrix.strassMult(M, 2, 2){
-    
-  }
+  indexFun.strassMult(M, 2, 2)
 }
