@@ -1,7 +1,7 @@
 // Fibonacci functions
 
 // Multiplication functions
-exports.printM = require('./Algos/Multiplication/printMatrix.js')
-exports.StrassenMatrix = require('./Algos/Multiplication/StrassenMatrix.js')
-exports.squareExpMatrix = require('./Algos/Multiplication/squareExpMatrix.js')
-exports.squareExp = require('./Algos/Multiplication/squareExp.js')
+exports.printM = require('./algos/Multiplication/printMatrix.js')
+exports.StrassenMatrix = require('./algos/Multiplication/StrassenMatrix.js')
+exports.squareExpMatrix = require('./algos/Multiplication/squareExpMatrix.js')
+exports.squareExp = require('./algos/Multiplication/squareExp.js')
