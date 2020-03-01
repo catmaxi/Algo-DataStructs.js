@@ -55,11 +55,6 @@ function randInt(a, b) {
   return a + Math.floor(Math.random() * span)
 }
 
-// let a = 10
-// let b = 20
-// b = [a, (a = b)][0]
-// console.log('x is ' + a + ' y is ' + b)
-
 arr = [3, 1, 2, 2]
 quicksort(arr)
 console.log(arr)
