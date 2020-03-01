@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/wenxuan27/Algo-DataStructs.js/issues"
   },
-  "homepage": "https://github.com/wenxuan27/Algo-DataStructs.js#readme"
+  "homepage": "https://github.com/wenxuan27/Algo-DataStructs.js#readme",
+  "dependencies": {
+    "process.hrtime": "^1.0.3"
+  }
 }
