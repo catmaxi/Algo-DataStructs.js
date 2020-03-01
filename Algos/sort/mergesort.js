@@ -1,8 +1,9 @@
 module.exports = {
   mergesort: function(arr) {
-    return mergesort(arr)
+    mergesort(arr)
   },
 }
+;('use strict')
 function mergesort(arr) {
   let l = 0
   let r = arr.length - 1
@@ -56,9 +57,9 @@ function merge(arr, l, m, r) {
     k++
   }
 }
-arr = [3, 1, 2, 2]
-mergesort(arr)
-console.log(arr)
-arr2 = [3, 2, 1, 9, 8, 0, 4, 6, 3, 1, 2, 7]
-mergesort(arr2)
-console.log(arr2)
+// arr = [3, 1, 2, 2]
+// mergesort(arr)
+// console.log(arr)
+// arr2 = [3, 2, 1, 9, 8, 0, 4, 6, 3, 1, 2, 7]
+// mergesort(arr2)
+// console.log(arr2)
