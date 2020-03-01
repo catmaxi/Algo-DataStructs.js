@@ -10,14 +10,15 @@ class HashMap {
   put(key, value) {
     if (!this.containsKey(key)) {
       this.set(key, value)
-      size++
+      this.size++
     }
   }
 
   containsKey(key) {
     const index = this.getIndex(key)
-    if (this.buckets[index] !== null) {
-      const itemList = this.buckets[index]
+    let itemList = this.buckets[index]
+    if (itemList != null) {
+      // console.log(itemList)
       for (let j = 0; j < itemList.length; j++) {
         if (itemList[j].key === key) {
           return true
@@ -42,30 +43,34 @@ class HashMap {
   }
 
   get(key) {
-    const index = this.getIndex(key)
-    const itemList = this.buckets[index]
-    const entry
-    for (let i = 0; i < itemList.length; i++) {
-      entry = itemList[i]
-      if (entry.key === key) {
-        return entry.value
+    if (this.containsKey(key)) {
+      const index = this.getIndex(key)
+      const itemList = this.buckets[index]
+      let entry
+      for (let i = 0; i < itemList.length; i++) {
+        entry = itemList[i]
+        if (entry.key === key) {
+          return entry.value
+        }
       }
+      return entry
     }
-    return entry
   }
 
   remove(key) {
-    const index = this.getIndex(key)
-    const itemList = this.buckets[index]
-    const entry
-    for (let i = 0; i < itemList.length; i++){
-      entry = itemList[i]
-      if (entry.key === key) {
-        itemList.splice(i, 1)
-        break;
+    if (this.containsKey(key)) {
+      const index = this.getIndex(key)
+      const itemList = this.buckets[index]
+      let entry
+      for (let i = 0; i < itemList.length; i++) {
+        entry = itemList[i]
+        if (entry.key === key) {
+          itemList.splice(i, 1)
+          break
+        }
       }
+      return entry
     }
-    return entry
   }
 
   hash(key) {
@@ -83,6 +88,9 @@ class HashMap {
     const indexHash = this.hash(key)
     const index = indexHash % this.buckets.length
     return index
+  }
+  getSize() {
+    return this.size
   }
 
   toString() {
@@ -105,19 +113,16 @@ class HashMap {
     }
     return string
   }
-
-  size() {
-    return this.size
-  }
 }
 module.exports = { HashMap }
 
 let hm = new HashMap(14)
-hm.set('cards', 'red')
-hm.set('cards', 'green')
+hm.put('cards', 'red')
+hm.put('cards1', 'green')
 // console.log(hm.buckets)
 console.log(hm.toString())
 console.log(hm.containsKey('cards'))
+console.log(hm.getSize())
 // console.log(hm.hash('rat'))
 // console.log(hm.hash('art'))
 // console.log(hm.hash('eag'))
