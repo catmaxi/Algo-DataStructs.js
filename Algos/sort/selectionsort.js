@@ -34,5 +34,5 @@ function selectionsort(arr) {
 //   return min
 // }
 
-console.log(selectionsort([3, 2, 1, 9, 8, 0, 4, 6, 3, 1, 2, 7]))
-console.log(selectionsort([3, 1, 2, 2]))
+// console.log(selectionsort([3, 2, 1, 9, 8, 0, 4, 6, 3, 1, 2, 7]))
+// console.log(selectionsort([3, 1, 2, 2]))

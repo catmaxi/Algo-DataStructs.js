@@ -8,7 +8,7 @@
       "type": "node",
       "request": "launch",
       "name": "main-debugger",
-      "program": "${workspaceFolder}/Algos/sort/selectionsort.js",
+      "program": "${workspaceFolder}/Algos/sort/mergesort.js",
       "skipFiles": ["<node_internals>/**"]
     }
   ]
