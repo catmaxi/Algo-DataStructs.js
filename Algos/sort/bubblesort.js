@@ -23,5 +23,5 @@ function bubblesort(arr) {
   return arr
 }
 
-console.log(bubblesort([3, 2, 1, 9, 8, 0, 4, 6, 3, 1, 2, 7]))
-console.log(bubblesort([3, 1, 2, 2]))
+// console.log(bubblesort([3, 2, 1, 9, 8, 0, 4, 6, 3, 1, 2, 7]))
+// console.log(bubblesort([3, 1, 2, 2]))

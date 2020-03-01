@@ -13,3 +13,10 @@ exports.quicksort = require('./Algos/sort/quicksort.js')
 exports.mergesort = require('./Algos/sort/mergesort.js')
 exports.heapsort = require('./Algos/sort/heapsort.js')
 exports.introsort = require('./Algos/sort/introsort.js')
+
+// Data-Structures
+// Hashmap
+exports.hashmap = require('./Data-Structs/Hashtable/hashmap.js')
+
+const { HashMap } = require('./Data-Structs/Hashtable/hashmap.js')
+// let hm = new HashMap()

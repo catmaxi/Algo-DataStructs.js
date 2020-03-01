@@ -55,9 +55,9 @@ function randInt(a, b) {
   return a + Math.floor(Math.random() * span)
 }
 
-arr = [3, 1, 2, 2]
-quicksort(arr)
-console.log(arr)
-arr2 = [3, 2, 1, 9, 8, 0, 4, 6, 3, 1, 2, 7]
-quicksort(arr2)
-console.log(arr2)
+// arr = [3, 1, 2, 2]
+// quicksort(arr)
+// console.log(arr)
+// arr2 = [3, 2, 1, 9, 8, 0, 4, 6, 3, 1, 2, 7]
+// quicksort(arr2)
+// console.log(arr2)
