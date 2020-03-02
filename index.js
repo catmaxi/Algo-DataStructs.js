@@ -17,6 +17,15 @@ exports.introsort = require('./Algos/sort/introsort.js')
 // Data-Structures
 // Hashmap
 exports.hashmap = require('./Data-Structs/Hashtable/hashmap.js')
+// Set
+exports.hashmap = require('./Data-Structs/Hashtable/set.js')
+// LinkedList
+exports.hashmap = require('./Data-Structs/Lists/slinkedlist.js')
+// DoubleLinkedList
+exports.hashmap = require('./Data-Structs/Lists/dlinkedlist.js')
 
-const { HashMap } = require('./Data-Structs/Hashtable/hashmap.js')
-// let hm = new HashMap()
+// Trees
+// Rooted Tree
+exports.hashmap = require('./Data-Structs/Trees/tree.js')
+// Heap
+exports.hashmap = require('./Data-Structs/Trees/heap.js')
