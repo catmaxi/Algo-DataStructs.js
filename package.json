@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/wenxuan27/Algo-DataStructs.js#readme",
   "dependencies": {
+    "nano-time": "^1.0.0",
     "process.hrtime": "^1.0.3"
   }
 }

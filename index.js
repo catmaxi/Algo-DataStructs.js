@@ -18,14 +18,17 @@ exports.introsort = require('./Algos/sort/introsort.js')
 // Hashmap
 exports.hashmap = require('./Data-Structs/Hashtable/hashmap.js')
 // Set
-exports.hashmap = require('./Data-Structs/Hashtable/set.js')
+exports.set = require('./Data-Structs/Hashtable/set.js')
 // LinkedList
-exports.hashmap = require('./Data-Structs/Lists/slinkedlist.js')
+exports.slinkedlist = require('./Data-Structs/Lists/slinkedlist.js')
 // DoubleLinkedList
-exports.hashmap = require('./Data-Structs/Lists/dlinkedlist.js')
+exports.dlinkedlist = require('./Data-Structs/Lists/dlinkedlist.js')
 
 // Trees
 // Rooted Tree
-exports.hashmap = require('./Data-Structs/Trees/tree.js')
+exports.tree = require('./Data-Structs/Trees/tree.js')
 // Heap
-exports.hashmap = require('./Data-Structs/Trees/heap.js')
+exports.heap = require('./Data-Structs/Trees/heap.js')
+
+// Graphs
+exports.graph = require('./Data-Structs/Graphs/graph.js')

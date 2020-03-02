@@ -1,4 +1,5 @@
 let indexFun = require('../../index.js')
+const now = require('nano-time')
 let arr10000 = [
   9276,
   2799,
@@ -10104,3 +10105,23 @@ let arr100 = [
   6799,
   8148,
 ]
+
+let arr5 = [1, 2, 3]
+
+let now1 = now()
+// indexFun.bubblesort.bubblesort(arr10000)
+let now2 = now()
+let bubblesorttime = now2 - now1
+console.log(bubblesorttime)
+
+now1 = now()
+// indexFun.quicksort.quicksort(arr10000)
+now2 = now()
+let quicksorttime = now2 - now1
+console.log(quicksorttime)
+
+let a = 1,
+  b = 2
+;[a, b] = [b, a]
+
+console.log(a + " " + b)

@@ -116,13 +116,13 @@ class HashMap {
 }
 module.exports = { HashMap }
 
-let hm = new HashMap(14)
-hm.put('cards', 'red')
-hm.put('cards1', 'green')
-// console.log(hm.buckets)
-console.log(hm.toString())
-console.log(hm.containsKey('cards'))
-console.log(hm.getSize())
+// let hm = new HashMap(14)
+// hm.put('cards', 'red')
+// hm.put('cards1', 'green')
+// // console.log(hm.buckets)
+// console.log(hm.toString())
+// console.log(hm.containsKey('cards'))
+// console.log(hm.getSize())
 // console.log(hm.hash('rat'))
 // console.log(hm.hash('art'))
 // console.log(hm.hash('eag'))
